@@ -1,0 +1,14 @@
+* { 
+    margin: 0;
+  
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.gallery { 
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+}

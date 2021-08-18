@@ -1,0 +1,14 @@
+.container{ 
+    background-color: rebeccapurple;
+  width: 100vw;
+}
+
+.nav{ 
+    background-color: aqua;
+   width: 100vw!important;
+}
+
+
+.active { 
+    background-color: red;
+}
