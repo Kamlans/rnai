@@ -12,3 +12,15 @@
 .active { 
     background-color: red;
 }
+
+.navbarLink{ 
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+padding : 0.5rem;
+
+}
+
+#logo{ 
+    padding-left: 1rem;
+}

@@ -15,8 +15,11 @@ import Gallery from './Components/Team/Gallery/Gallery';
 import LabAlumini from './Components/Team/Lab_Alumini/LabAlumini';
 import PrincipalInvestigator from './Components/Team/Principal_Investigator/PrincipalInvestigator';
 import WhoWeAre from './Components/Team/Who_are_we/WhoWeAre';
+import Home from './Components/Home/Home'
 import NavBarComponent from './Navbar';
-import { BrowserRouter , NavLink } from 'react-router-dom';
+
+import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom';
+import Journals from './Components/Publications/Journals/Journals';
 
 
 
@@ -24,16 +27,37 @@ function App() {
   return (
     <div className="App">
 
-  
+
       <BrowserRouter>
+
+        <NavBarComponent className="navbar" />
+     
+
       
-        <NavBarComponent style={{ "width": '100vw'}} />
+
+        <Switch>
+         
+        {/* <Route path="/" component={Home}  /> */}
+        <Route path="/aboutus" component={About_us} exact />
+        <Route path="/contactus" component={ContactUs} />
+        <Route path="/labnews" component={LabNews} exact />
+        <Route path="/bookchapters" component={BookChapters} exact />
+        <Route path="/books" component={Books} exact />
+        <Route path="/journals" component={Journals} exact />
+        <Route path="/others" component={Others} exact />
+        <Route path="/funding" component={Funding} exact />
+        <Route path="/overview" component={Overview} exact />
+        <Route path="/resources" component={Resources} exact />
+        <Route path="/gallery" component={Gallery} exact />
+        <Route path="/labalumini" component={LabAlumini} exact />
+        <Route path="/pi" component={PrincipalInvestigator} exact />
+        <Route path="/whoarewe" component={WhoWeAre} exact />
+
+   
+        </Switch>
+        
       </BrowserRouter>
-
-      <Gallery />
-
-      
-{/*      
+      {/*      
       < About_us />
       <ContactUs />
       <LabNews />
