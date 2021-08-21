@@ -17,9 +17,9 @@ import PrincipalInvestigator from './Components/Team/Principal_Investigator/Prin
 import WhoWeAre from './Components/Team/Who_are_we/WhoWeAre';
 import Home from './Components/Home/Home'
 import NavBarComponent from './Navbar';
-
 import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom';
 import Journals from './Components/Publications/Journals/Journals';
+import Profile from './Components/Profile/Profile';
 
 
 
@@ -37,7 +37,7 @@ function App() {
 
         <Switch>
          
-        {/* <Route path="/" component={Home}  /> */}
+        <Route path="/" component={Home} exact />
         <Route path="/aboutus" component={About_us} exact />
         <Route path="/contactus" component={ContactUs} />
         <Route path="/labnews" component={LabNews} exact />
@@ -52,7 +52,7 @@ function App() {
         <Route path="/labalumini" component={LabAlumini} exact />
         <Route path="/pi" component={PrincipalInvestigator} exact />
         <Route path="/whoarewe" component={WhoWeAre} exact />
-
+          <Route path="/profile" component={Profile} exact />
    
         </Switch>
         

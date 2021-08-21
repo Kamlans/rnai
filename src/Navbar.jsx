@@ -10,44 +10,135 @@ function NavBarComponent() {
         <div >
 
 
-            <Navbar className="fixed-top" collapseOnSelect expand="lg" bg="#fff" variant="light"  >
+            <Navbar  collapseOnSelect expand="lg" bg="#fff" variant="dark"  >
 
                 <Navbar.Brand>
-                    <NavLink to="/home" activeClassName="active" id="logo" className="navbarLink" >
+                    <NavLink to="/" activeClassName="active" id="logo" className="navbarLink" >
                         Vivek 
                     </NavLink>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ backgroundColor: "white" }}>
+                    <span style={{ color: " #1261A0"}} > &#9776;</span>
+
+                    </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
 
-                        <NavLink to="/aboutus" activeClassName="active" className="navbarLink"  >
-                            About us
-                        </NavLink>
-
-                        
-
-
-                        <Nav.Link to="/home" activeClassName="active" id="logo">
-                            LOGO3
-                        </Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                    <Nav className="me-auto" >
+                        <NavDropdown title="PUBLICATIONS" id="collasible-nav-dropdown" className="navbarLink dropdown" style={{  color: "#3895D3" }}>
                             <NavDropdown.Item >
 
-                                <Nav.Link to="/home" activeClassName="active" id="logo"   >
-                                  dfksfsf
-                                </Nav.Link>
+                                <NavLink to="/books" activeClassName="active" className="navbarLink"  >
+                                    BOOKS
+                                </NavLink>
+
+                            </NavDropdown.Item>
+
+
+                            <NavDropdown.Item>
+                                <NavLink to="/bookchapters" activeClassName="active" className="navbarLink"  >
+                                    BOOK CHAPTERS
+                                </NavLink>
+                            </NavDropdown.Item>
+
+                            <NavDropdown.Item>
+                                <NavLink to="/journals" activeClassName="active" className="navbarLink"  >
+                                    JOURNALS
+                                </NavLink>
                             </NavDropdown.Item>
 
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/others" activeClassName="active" className="navbarLink"  >
+                                    OTHERS
+                                </NavLink>
+                            </NavDropdown.Item>
                         </NavDropdown>
+
+                        <NavDropdown title="RESEARCH" id="collasible-nav-dropdown2" className="navbarLink dropdown" style={{  color:" #3895D3" }}>
+                            <NavDropdown.Item >
+
+                                <NavLink to="/funding" activeClassName="active" className="navbarLink"  >
+                                    FUNDING
+                                </NavLink>
+
+                            </NavDropdown.Item>
+
+
+                            <NavDropdown.Item>
+                                <NavLink to="/overview" activeClassName="active" className="navbarLink"  >
+                                    OVERVIEW
+                                </NavLink>
+                            </NavDropdown.Item>
+
+                            <NavDropdown.Divider />
+
+                            <NavDropdown.Item>
+                                <NavLink to="/resources" activeClassName="active" className="navbarLink"  >
+                                    RESOURCES
+                                </NavLink>
+                            </NavDropdown.Item>
+
+
+                        </NavDropdown>
+
+                        <NavDropdown title="TEAM" id="collasible-nav-dropdown3" className="navbarLink dropdown" style={{  color: "#3895D3" }}>
+                            <NavDropdown.Item >
+
+                                <NavLink to="/gallery" activeClassName="active" className="navbarLink"  >
+                                    GALLERY
+                                </NavLink>
+
+                            </NavDropdown.Item>
+
+
+                            <NavDropdown.Item>
+                                <NavLink to="/labalumini" activeClassName="active" className="navbarLink"  >
+                                    LAB ALUMINI
+                                </NavLink>
+                            </NavDropdown.Item>
+
+                            <NavDropdown.Item>
+                                <NavLink to="/pi" activeClassName="active" className="navbarLink"  >
+                                    PRINCIPAL \n INVESTIGATOR
+                                </NavLink>
+                            </NavDropdown.Item>
+
+                            <NavDropdown.Divider />
+
+                            <NavDropdown.Item>
+                                <NavLink to="/whoarewe" activeClassName="active" className="navbarLink"  >
+                                    WHO ARE WE
+                                </NavLink>
+                            </NavDropdown.Item>
+
+
+                        </NavDropdown>
+
+                       
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
+                        <NavLink to="/aboutus" activeClassName="active" className="navbarLink"  >
+                            ABOUT US
+                        </NavLink>
+
+                        <NavLink to="/contactus" activeClassName="active" className="navbarLink"  >
+                          CONTACT US
+                        </NavLink>
+
+                        <NavLink to="/labnews" activeClassName="active" className="navbarLink"  >
+                           LAB NEWS
+                        </NavLink>
+
+                        <NavLink to="/profile" activeClassName="active" className="navbarLink"  >
+                            PROFILE
+                        </NavLink>
+
+                        <NavLink to=" "  className="navbarLink"  >
+                           
+                        </NavLink>
+
+                       
                     </Nav>
                 </Navbar.Collapse>
 

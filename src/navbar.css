@@ -10,17 +10,25 @@
 
 
 .active { 
-    background-color: red;
+    text-decoration-style: solid;
 }
 
 .navbarLink{ 
     vertical-align: middle;
     text-decoration: none;
     text-align: center;
+    background-color: transparent;
 padding : 0.5rem;
+color: #1261A0
 
 }
+
+#collasible-nav-dropdown , #collasible-nav-dropdown2 ,#collasible-nav-dropdown3{
+    color: #1261A0
+}
+
 
 #logo{ 
     padding-left: 1rem;
 }
+
